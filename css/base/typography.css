@@ -1,0 +1,533 @@
+/* typography.css */
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    font-size: 16px;
+    background: #FAEDE3;
+    color: #0A2A43;
+    overflow-x: hidden; 
+}
+
+.about-us h1,h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff; 
+    font-weight: 700; 
+    line-height: 1.4; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+    padding: 10px 0; 
+    border-radius: 10px; 
+}
+
+a {
+    text-decoration: none;
+    color: #FF784C;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0A2A43;
+}
+
+a:focus {
+    outline: 2px dashed #FF784C; 
+    outline-offset: 2px;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    background: #134D66;
+    color: #F5F5F5;
+    padding: 40px 40px; 
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    line-height: 1.8; 
+}
+
+.about-container p {
+    margin-bottom: 20px; 
+    font-size: 1.2rem;
+    color: #D9D9D9;
+}
+
+.about-container h1, 
+.about-container h2 {
+    margin-bottom: 30px; 
+    font-size: 2rem; 
+    line-height: 1.4; 
+    color: #ffffff;
+}
+
+.about-us h1 {
+    margin-bottom: 15px;
+}
+
+figcaption {
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.6;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Hero Banner Section */
+.hero-banner {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    background: #FAEDE3; 
+    color: #fff;
+    height: auto; 
+    text-align: center;
+    margin: 0; 
+    padding: 20px 0; 
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    background: url('../../images/gulp-coffee-beans.jpg') no-repeat center center;
+    background-size: cover; 
+    padding: 40px; 
+    border-radius: 25px; 
+    max-width: 800px; 
+    color: #fff; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    text-align: center; 
+}
+
+.hero-content h1 {
+    width: 100%; 
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px 30px; 
+    font-size: 3rem; 
+    margin-bottom: 20px;
+    text-align: center; 
+    color: #0A2A43; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    display: inline-block;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center; 
+    text-shadow: 3px 3px 5px black;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.hero-content .btn {
+    background: rgba(10, 42, 67, 0.85);
+    display: inline-block;
+    background-color: #FFB48F;
+    color: #0A2A43;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #134D66;
+    color: #fff;
+}
+
+/* General Styling */
+#featured {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding: 20px; 
+    background-color: #FAEDE3; 
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+#featured h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem); 
+    margin-bottom: 20px; 
+    color: #0A2A43;
+    line-height: 1.4; 
+    text-align: center; 
+    word-wrap: break-word;
+}
+
+#products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #FAEDE3;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 20px; /* Add spacing between elements */
+}
+
+#products h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 20px;
+    color: #0A2A43;
+    line-height: 1.4;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 300px; 
+}
+
+.product-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #0A2A43;
+}
+
+.product-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #134D66;
+}
+
+.product-item .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0A2A43;
+}
+
+/* Contact Featured Layout */
+
+.contact-featured {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+@media (min-width: 768px) {
+    .contact-featured {
+        flex-direction: column; 
+        gap: 40px; 
+    }
+}
+
+/* Feature Item Styling */
+.feature-item {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    gap: 10px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: #FFF;
+    flex: 1 1 100%;
+    height: auto;
+    min-height: 200px;
+}
+
+@media (min-width: 768px) {
+    .feature-item {
+        flex-direction: row; 
+        align-items: center;
+        gap: 20px; 
+    }
+
+    .feature-item:nth-child(even) {
+        flex-direction: row-reverse; 
+    }
+}
+
+/* Image Container Styling */
+.image-container {
+    flex: 1;
+    max-width: 40%; 
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Text Container Styling */
+.text-container {
+    flex: 1;
+    max-width: 100%; 
+    text-align: center; 
+}
+
+.text-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0A2A43;
+}
+
+.text-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #134D66;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #0A2A43;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.call-to-action h2 {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0A2A43;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.call-to-action .btn {
+    display: inline-block;
+    background-color: #FFB48F;
+    color: #0A2A43;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action .btn:hover {
+    background-color: #134D66;
+    color: #fff;
+}
+label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #0A2A43;
+    margin-left: 20px;
+}
+
+#contact-form {
+    background: #FAEDE3;
+    color: #0A2A43;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#contact-form h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #0A2A43;
+    margin-bottom: 10px;
+}
+
+#contact-form p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #134D66;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0A2A43;
+}
+
+input, textarea {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    color: #0A2A43;
+}
+
+input:focus, textarea:focus {
+    border-color: #0A2A43;
+    box-shadow: 0 0 5px rgba(10, 42, 67, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+#contact-form button.btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    background: #0A2A43;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button.btn:hover {
+    background: #FFB48F;
+    color: #0A2A43;
+}
+
+/* Form Inputs */
+input, textarea {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #0A2A43;
+    box-shadow: 0 0 5px rgba(10, 42, 67, 0.3);
+}
+
+/* Locations Section */
+#locations {
+    background: #FAEDE3;
+    color: #0A2A43;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+#locations h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #0A2A43;
+}
+
+#locations p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #134D66;
+    line-height: 1.6;
+}
+
+#locations ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#locations ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #0A2A43;
+}
+
+#locations a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #FF784C;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#locations a:hover {
+    color: #0A2A43;
+}
+
+#locations a:focus {
+    outline: 2px dashed #FF784C; 
+    outline-offset: 2px;
+}

@@ -1,0 +1,29 @@
+@import url('./base/reset.css');
+@import url('./base/typography.css');
+@import url('./layout/grid.css');
+@import url('./layout/header.css');
+@import url('./components/buttons.css');
+@import url('./layout/footer.css');
+
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    animation: fadeIn 1.2s ease;
+}
+
+.link {
+    color: #F2F2F2;
+  }
+  .link:hover {
+    color: #D98555; /* Peach on hover */
+  }
+
+* {
+  word-wrap: break-word; /* Break long words to fit within the container */
+  word-break: break-word; /* Handle words that are too long for the container */
+  overflow-wrap: break-word; /* Ensure lines wrap when they overflow */
+}
+
