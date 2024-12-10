@@ -30,11 +30,6 @@ a:hover {
     color: #0A2A43;
 }
 
-a:focus {
-    outline: 2px dashed #FF784C; 
-    outline-offset: 2px;
-}
-
 /* About Section */
 .about-container {
     display: flex;
@@ -292,8 +287,6 @@ figcaption {
     height: auto;
     border-radius: 10px;
 }
-
-
 
 /* Text Container Styling */
 .text-container {

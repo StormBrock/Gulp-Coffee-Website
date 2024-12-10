@@ -22,8 +22,3 @@ button:hover, .btn:hover {
     background: #FF784C; /* Improved hover contrast */
     color: #FFFFFF;
 }
-
-button:focus, .btn:focus {
-    outline: 2px solid #FF784C;
-    outline-offset: 3px;
-}
