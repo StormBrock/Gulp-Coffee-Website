@@ -526,8 +526,3 @@ input:focus, textarea:focus {
 #locations a:hover {
     color: #0A2A43;
 }
-
-#locations a:focus {
-    outline: 2px dashed #FF784C; 
-    outline-offset: 2px;
-}
